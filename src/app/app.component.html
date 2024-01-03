@@ -1,7 +1,11 @@
-<!-- <app-header></app-header> -->
-<app-todo>
-  
-</app-todo>
+<!-- <app-header ></app-header> -->
+<!-- <app-todo></app-todo> -->
+<ul>
+  @for (user of userDetails; track user.name) {
+    <p> <app-pdtcc [user]="user"> </app-pdtcc></p>
+
+  }
+</ul>
 
 
 

@@ -4,11 +4,13 @@ import { RouterOutlet } from '@angular/router';
 import { UserListComponent } from './user-list/user-list.component';
 import { HeaderComponent } from './header/header.component';
 import { TodoComponent } from './todo/todo.component';
+import { PdtccComponent } from './pdtcc/pdtcc.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,UserListComponent,HeaderComponent,TodoComponent],
+  imports: [CommonModule, RouterOutlet,UserListComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -42,6 +44,14 @@ export class AppComponent {
   productList=[{id:1,name:'bisal'},
 {id:2,name:"Bikash"},
 {id:3,name:"Rahul"}];
+num=4;
+userDetails=[{
+  name:"John Doe",
+  email:'jhonkk@htk.com'
+},{
+  name:"Jane Smith",
+  email:'janesmith@gmail.com'
+}]
   }
   
 
