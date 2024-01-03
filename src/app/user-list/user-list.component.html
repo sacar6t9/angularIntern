@@ -1,1 +1,48 @@
 <p class="custom">user-list works!</p>
+<div>
+    <h1 *ngIf="ready else ifblock">
+    <p>hello</p>
+    </h1>
+    <ng-template #ifblock>
+        <p> kxa</p>
+    </ng-template>
+    <h1>
+        @if (ready) {
+            <p>khekklo</p>
+        }
+        @else {
+            <p>hehe</p>
+        }
+
+    </h1>
+    <div>
+        @switch (shippingMethod) {
+            @case ('standard') {
+                <p> cost is low</p>
+            }
+            @case ('air') {
+                <p>cost is high, but fast</p>
+            }
+            @default  {
+                <p>unknown shipping method: {{shippingMethod}}</p>
+            }
+        }
+    </div>
+    <div>
+        @for (user of users; track user.name) {
+            <ul>
+                <li> {{user.id}}=={{user.name}}</li>
+            </ul>
+        }
+    </div>
+   <div>
+    @for (ticket of tickets; track ticket.assignee.department) {
+        <li> {{ticket.assignee.department}}</li>
+    }
+   </div>
+   <div>
+    @for (user of students; track user.socialAcc.social) {
+        <li>{{user.socialAcc.social}}</li>
+    }
+   </div>
+</div>

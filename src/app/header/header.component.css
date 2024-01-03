@@ -1,0 +1,26 @@
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4cc9f0;
+    color: #b5179e;
+    padding: 20px; /* Add padding for better spacing */
+    color: white;
+  }
+  a{
+    color: white;
+  }
+  
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style-type: none; 
+    color: white;
+  }
+  
+  .home, .about, .login {
+    margin: 10px; /* Adjust margin according to your design */
+  }
+  

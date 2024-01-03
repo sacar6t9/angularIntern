@@ -1,15 +1,105 @@
-<h1> hello bishal {{title}}</h1>
-<input type="text" placeholder="enter your name" #box  />
+<!-- <app-header></app-header> -->
+<app-todo>
+  
+</app-todo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1 [style.color]="color">hello bishal {{title}}</h1>
+<input type="text" placeholder="enter your name" #box />
 <button (click)="getData(box.value)">inputData</button>
-<p> this is the data you have written in the input box <br>
-    <br>
-    {{data}}
+<p>
+  this is the data you have written in the input box <br />
+  <br />
+  {{data}}
 </p>
 
-<button (click)="increment()">increment</button>{{count}}<button (click)="decrement()">decrement</button>
-<br><br><br>
-<button (click)="counter('add')"> add</button>
-<p> {{count}}</p>
+<button (click)="increment()">increment</button>{{count}}<button
+  (click)="decrement()"
+>
+  decrement
+</button>
+<br /><br /><br />
+<button (click)="counter('add')">add</button>
+<p>{{count}}</p>
 <button (click)="counter('sub')">minus</button>
-<input type="text" value={{name}} disabled={{disable}}>
-<input type="text" [value]="name" [disabled]="disable">
+<input type="text" value="{{name}}" disabled="{{disable}}" />
+<input type="text" [value]="name" [disabled]="disable" />
+<br><br>
+<h1 *ngIf="show  else elseBlock">
+yahooo its iffffff
+</h1>
+<ng-template #elseBlock>
+  its else huhu
+</ng-template>
+<h1 *ngIf="age>18 else nextBlock"> you are adult</h1>
+<ng-template #nextBlock>
+    you are a baby huhuhu
+</ng-template>
+<div>
+  @if (user==='admin') {
+    <p> this is admin , hello</p>
+  }
+  @else if (user==='customer') {
+    <p> hi there , i am customer </p>
+  }
+  @else {
+    <p> who r u ? </p>
+  }
+</div>
+<div>
+  <ul>
+    @for (product of productList; track product.name) {
+      <li>{{product.id}}={{product.name}}</li>
+    }
+    @empty {
+      <li>thereisnoitems</li>
+    }
+  </ul>
+
+</div>
+<button (click)="updatecolor()">changeColor</button>
+
+<app-user-list></app-user-list> -->
