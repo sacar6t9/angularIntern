@@ -3,10 +3,12 @@
 <button (click)="updateDataEvent.emit(box.value)">submit</button>
 
  -->
-<input type="text" [(ngModel)]="info">
-{{info}}
+<!-- <input type="text" [(ngModel)]="info">
+{{info}} -->
 
-
+<h1>{{today | date}}</h1>
+<h1>{{datas | uppercase}}</h1>
+<h1>{{title | slice :3:6}}</h1>
 
 
 
