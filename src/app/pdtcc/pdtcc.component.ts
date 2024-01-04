@@ -1,9 +1,9 @@
-import { Component,Input } from '@angular/core';
-
+import { Component,Input} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-pdtcc',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './pdtcc.component.html',
   styleUrl: './pdtcc.component.css'
 })
