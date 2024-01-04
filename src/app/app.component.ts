@@ -7,11 +7,13 @@ import { TodoComponent } from './todo/todo.component';
 import { PdtccComponent } from './pdtcc/pdtcc.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { ChildComponent } from './child/child.component';
+import { TdformComponent } from './tdform/tdform.component';
+import { UsdToNrsPipe } from './pipes/usd-to-nrs.pipe';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,UserListComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent,ChildComponent],
+  imports: [CommonModule, RouterOutlet,UserListComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent,ChildComponent,UsdToNrsPipe,TdformComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
