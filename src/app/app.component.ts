@@ -6,11 +6,12 @@ import { HeaderComponent } from './header/header.component';
 import { TodoComponent } from './todo/todo.component';
 import { PdtccComponent } from './pdtcc/pdtcc.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { ChildComponent } from './child/child.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,UserListComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent],
+  imports: [CommonModule, RouterOutlet,UserListComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent,ChildComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -52,6 +53,11 @@ userDetails=[{
   name:"Jane Smith",
   email:'janesmith@gmail.com'
 }]
+datas='x'
+updateData(item:any){
+  console.log(item)
+  this.datas=item
+}
   }
   
 
