@@ -1,0 +1,14 @@
+<p>raform-p works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="userDetails()">
+<input type="text" placeholder="enter name" formControlName="user">
+@if (user && user.invalid && user.touched) {
+    <span style="color: red;">enter username </span>
+}
+<input type="password" placeholder="password" formControlName="password">
+@if (password && password.invalid && password.touched) {
+    <span style="color: red;"></span>
+}
+
+<br> <br>
+<button [disabled]="loginForm.invalid"> login</button>
+</form>

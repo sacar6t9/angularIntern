@@ -1,1 +1,6 @@
 <p>raform works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="loginDetails()">
+    <input type="text" placeholder="enter name" formControlName="user" >
+    <input type="password" placeholder="enter password" formControlName="password">
+</form>
+ 

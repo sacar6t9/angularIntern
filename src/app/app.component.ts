@@ -9,11 +9,13 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { ChildComponent } from './child/child.component';
 import { TdformComponent } from './tdform/tdform.component';
 import { UsdToNrsPipe } from './pipes/usd-to-nrs.pipe';
+import { RaformComponent } from './raform/raform.component';
+import { RaformPComponent } from './raform-p/raform-p.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,UserListComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent,ChildComponent,UsdToNrsPipe,TdformComponent],
+  imports: [CommonModule, RouterOutlet,UserListComponent,RaformComponent,  RaformPComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent,ChildComponent,UsdToNrsPipe,TdformComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
