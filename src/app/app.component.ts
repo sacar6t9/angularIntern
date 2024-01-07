@@ -11,11 +11,14 @@ import { TdformComponent } from './tdform/tdform.component';
 import { UsdToNrsPipe } from './pipes/usd-to-nrs.pipe';
 import { RaformComponent } from './raform/raform.component';
 import { RaformPComponent } from './raform-p/raform-p.component';
+import { RedELDirective } from './red-el.directive';
+import { UserService } from './service/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,UserListComponent,RaformComponent,  RaformPComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent,ChildComponent,UsdToNrsPipe,TdformComponent],
+  imports: [CommonModule, RouterOutlet,UserListComponent, HttpClientModule ,RaformComponent, RedELDirective, RaformPComponent,HeaderComponent,TodoComponent,PdtccComponent,UserDetailsComponent,ChildComponent,UsdToNrsPipe,TdformComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -62,6 +65,7 @@ updateData(item:any){
   console.log(item)
   this.datas=item
 }
+
   }
   
 
